@@ -276,7 +276,7 @@
   // Hàm gọi API backend
   async function api(action, extra = {}) {
     try {
-      const res = await fetch('/api/game', {
+      const res = await fetch('/api/telegram', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action, initData, ...extra }),
